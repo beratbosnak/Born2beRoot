@@ -9,7 +9,7 @@
 ## 📖 Table of Contents
 * [About The Project](#-about-the-project)
 * [Key Features & Technical Skills](#-key-features--technical-skills)
-* [System Configuration](# -system-configuration)
+* [System Configuration](#-system-configuration)
   * [LVM Partitioning](#lvm-partitioning)
   * [Security Hardening](#security-hardening)
   * [Monitoring Script](#monitoring-script)
@@ -47,7 +47,7 @@ The project includes setting up VirtualBox with Debian, configuring encrypted LV
 | **Package Management** | apt/aptitude usage, service installation and configuration |
 | **Web Services** | WordPress deployment, lighttpd, MariaDB, PHP configuration |
 
-## 🖥️ System Configuration
+## 💻 System Configuration
 
 ### LVM Partitioning
 

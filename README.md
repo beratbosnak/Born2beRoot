@@ -9,7 +9,7 @@
 ## 📖 Table of Contents
 * [About The Project](#-about-the-project)
 * [Key Features & Technical Skills](#-key-features--technical-skills)
-* [System Configuration](#-system-configuration)
+* [System Configuration](# -system-configuration)
   * [LVM Partitioning](#lvm-partitioning)
   * [Security Hardening](#security-hardening)
   * [Monitoring Script](#monitoring-script)

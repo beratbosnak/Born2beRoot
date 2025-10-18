@@ -47,7 +47,7 @@ The project includes setting up VirtualBox with Debian, configuring encrypted LV
 | **Package Management** | apt/aptitude usage, service installation and configuration |
 | **Web Services** | WordPress deployment, lighttpd, MariaDB, PHP configuration |
 
-## ⚙️ System Configuration
+## 🖥️ System Configuration
 
 ### LVM Partitioning
 

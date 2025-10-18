@@ -294,7 +294,7 @@ sudo nano /etc/ssh/sshd_config
 Port 4242
 PermitRootLogin no
 
-# Restart SSH service
+# Restart SSH service (use 'sshd' if 'ssh' doesn't work)
 sudo systemctl restart ssh
 ```
 
@@ -324,6 +324,9 @@ sudo apt install libpam-pwquality
 
 **6. Configure Sudo:**
 ```bash
+# Create log directory first
+sudo mkdir -p /var/log/sudo
+
 # Create sudo configuration file
 sudo visudo -f /etc/sudoers.d/sudo_config
 
@@ -350,8 +353,8 @@ sudo ./monitoring.sh
 
 # Set up cron job (every 10 minutes)
 sudo crontab -e
-# Add line:
-*/10 * * * * /path/to/monitoring.sh
+# Add line (replace /home/username/Born2beRoot with your actual path):
+*/10 * * * * /home/username/Born2beRoot/monitoring.sh
 ```
 
 ### Usage Example
@@ -385,11 +388,19 @@ Broadcast message from root@wil (tty1) (Sun Apr 25 15:45:00 2021):
 
 **Accessing VM via SSH:**
 ```bash
-# From host machine
-ssh username@localhost -p 4242
+# First, find VM's IP address (run this inside VM)
+ip addr show
 
-# Or with IP
-ssh username@192.168.x.x -p 4242
+# From host machine (replace with actual VM IP)
+ssh username@VM_IP_ADDRESS -p 4242
+
+# Example:
+ssh parallels@10.211.55.3 -p 4242
+
+# Note: If using NAT networking in VirtualBox, you need to set up port forwarding:
+# VirtualBox → Settings → Network → Advanced → Port Forwarding
+# Host Port: 4242 → Guest Port: 4242
+# Then use: ssh username@localhost -p 4242
 ```
 
 **Stopping cron job (for defense):**

@@ -1,0 +1,78 @@
+# Born2beRoot .gitignore
+
+# ==========================================
+# Virtual Machine Files
+# ==========================================
+# VirtualBox files
+*.vdi
+*.vbox
+*.vbox-prev
+VirtualBox VMs/
+
+# UTM files (for Mac M1)
+*.qcow2
+*.utm/
+
+# VMware files
+*.vmdk
+*.vmx
+*.vmxf
+
+# ==========================================
+# VM Snapshots & Logs
+# ==========================================
+Snapshots/
+Logs/
+*.log
+
+# ==========================================
+# Sensitive Information
+# ==========================================
+# VM signature (sensitive)
+signature.txt
+
+# SSH keys
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# ==========================================
+# System Files
+# ==========================================
+# macOS
+.DS_Store
+._.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Linux
+*~
+.directory
+
+# ==========================================
+# Temporary Files
+# ==========================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Documentation Drafts
+# ==========================================
+drafts/
+notes.txt
+TODO.txt
+
+# ==========================================
+# Test Files
+# ==========================================
+test/
+tests/
+*.test
+
